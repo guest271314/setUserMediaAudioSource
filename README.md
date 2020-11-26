@@ -6,7 +6,7 @@ Chromium refuses to list or capture audio output devices at Linux, in brief
 - [Issue 865799: A way for enumerateDevices() to show audiooutput devices with labels when user has no cam or mic](https://bugs.chromium.org/p/chromium/issues/detail?id=865799) 
 - [Issue 931749: DOMException: could not start audio source when trying to access audioinput](https://bugs.chromium.org/p/chromium/issues/detail?id=931749)
 
-the relevant specifcations have not fixed seen fit to address the issue affirmatively either, in brief
+the relevant specifcations have not fixed or seen fit to address the issue affirmatively either, in brief
 
 - [enumerateDevices() should print correct MediaDeviceInfo #693](https://github.com/w3c/mediacapture-main/issues/693)
 - [Either fully support or remove audio capture entirely: "MAY" re audio capture is ambiguous #140](https://github.com/w3c/mediacapture-screen-share/issues/140)
