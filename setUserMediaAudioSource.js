@@ -1,5 +1,5 @@
 async function setUserMediaAudioSource(source) {
-  const quicTransportServerURL = `quic-transport://localhost:4433/toggle_source`;
+  const quicTransportServerURL = `quic-transport://localhost:4433/setUserMediaAudioSource`;
   try {
     const transport = new WebTransport(quicTransportServerURL);
     console.log(transport, source);
