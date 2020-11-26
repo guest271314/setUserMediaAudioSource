@@ -18,7 +18,7 @@ On Linux after executing `navigator.mediaDevices.getUserMedia({audio: true})` we
 
 > `pactl move-source-output` is the command to move capture streams ("source output" means capture stream and "sink input" means playback stream).
 
-Dynamically settings means that the same initial `MediaStreamTrack` source will be changed during the stream, thus we can capture microphone, actual audio output (monitor devices that Chromium refuses to list or capture), or any other devices that we decide to capture, in a single contiguous stream, bypassing the specifications and user-agents altogether.
+Dynamically setting means that the same initial `MediaStreamTrack` source will be changed during the stream, thus we can capture microphone, actual audio output (monitor devices that Chromium refuses to list or capture), or any other devices that we decide to capture, in a single contiguous stream, bypassing the specifications and user-agents altogether.
 
 # Usage
 
@@ -89,7 +89,7 @@ navigator.mediaDevices
   .catch(console.error);
   ```
   
-thereafter we can select and set any `source` and `source-output` that we decide to, at either Chromium or Firefox without bothering with `navigator.mediaDevices.enumerateDevices()` listing incorrect devices at Chrome or Chromium or calling `navigator.mediaDevices.getUserMedia()` multiple times with multiple `deviceId`s or `groupId`s at all just to change the device and resulting track
+thereafter we can select and set any `source` and `source-output` that we decide to, at either Chromium or Firefox without bothering with `navigator.mediaDevices.enumerateDevices()` listing incorrect devices at Chrome or Chromium or calling `navigator.mediaDevices.getUserMedia()` multiple times with multiple `deviceId`s or `groupId`s at all just to change the device and capture the resulting track
   
  ```
   setUserMediaAudioSource(
@@ -111,7 +111,7 @@ thereafter we can select and set any `source` and `source-output` that we decide
   .catch(console.error);
  ```
  
-again bypassing the specifications' and implementations inadequacies, omissions, lack of interoperabilty, etc.
+again bypassing the specifications' and implementations omissions, lack of interoperabilty, internally-imposed restrictions, etc.
 
 I have learned all that I know about Python in the several weeks that I have been experimenting with `QuicTransport` which is now obsolete ([Is QuicTransport obsolete?
 ](https://groups.google.com/a/chromium.org/g/web-transport-dev/c/PpQokbD6SbA/m/NImdr-9jBwAJ?pli=1)) and `WebTransport` ([webtransport](https://github.com/guest271314/samples-1/tree/gh-pages/webtransport)).
