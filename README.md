@@ -89,7 +89,7 @@ navigator.mediaDevices
   .catch(console.error);
   ```
   
-  thereafter we can select any `source` and `source-output` that we decide to, at either Chromium or Firefox
+thereafter we can select and set any `source` and `source-output` that we decide to, at either Chromium or Firefox without bothering with `navigator.mediaDevices.enumerateDevices()` listing incorrect devices at Chrome or Chromium or dealing with `devideId` and calling `navigator.mediaDevices.getUserMedia()` multiple times with multiple `deviceId`s or `groupId`s at all
   
  ```
   setUserMediaAudioSource(
@@ -100,7 +100,7 @@ navigator.mediaDevices
   .catch(console.error);
  ```
  
- set the source to a monitor again, in the same `MediaStream`
+ and set the source to a monitor again, or any other virtual or user-defined device that we want to in the same `MediaStream`
  
   ```
   setUserMediaAudioSource(
@@ -110,6 +110,8 @@ navigator.mediaDevices
   .then(console.log) // 'ok'
   .catch(console.error);
  ```
+ 
+again bypassing the specifications' and implementations inadequacies, omissions, lack of interoperabilties, etc.
 
 I have learned all that I know about Python in the several weeks that I have been experimenting with `QuicTransport` which is now obsolete ([Is QuicTransport obsolete?
 ](https://groups.google.com/a/chromium.org/g/web-transport-dev/c/PpQokbD6SbA/m/NImdr-9jBwAJ?pli=1)) and `WebTransport` ([webtransport](https://github.com/guest271314/samples-1/tree/gh-pages/webtransport)).
