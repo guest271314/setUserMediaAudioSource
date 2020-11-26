@@ -111,7 +111,7 @@ thereafter we can select and set any `source` and `source-output` that we decide
   .catch(console.error);
  ```
  
-again bypassing the specifications' and implementations inadequacies, omissions, lack of interoperabilties, etc.
+again bypassing the specifications' and implementations inadequacies, omissions, lack of interoperabilty, etc.
 
 I have learned all that I know about Python in the several weeks that I have been experimenting with `QuicTransport` which is now obsolete ([Is QuicTransport obsolete?
 ](https://groups.google.com/a/chromium.org/g/web-transport-dev/c/PpQokbD6SbA/m/NImdr-9jBwAJ?pli=1)) and `WebTransport` ([webtransport](https://github.com/guest271314/samples-1/tree/gh-pages/webtransport)).
