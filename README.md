@@ -1,5 +1,5 @@
 # setUserMediaAudioSource
-Dynamically set audio source for `MediaStreamTrack` from `getUserMedia({audio: true})`
+Dynamically set audio source for `MediaStreamTrack` from `getUserMedia({audio: true})`.
 
 Chromium refuses to list or capture audio output devices at Linux, in brief 
 
