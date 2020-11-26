@@ -89,7 +89,7 @@ navigator.mediaDevices
   .catch(console.error);
   ```
   
-thereafter we can select and set any `source` and `source-output` that we decide to, at either Chromium or Firefox without bothering with `navigator.mediaDevices.enumerateDevices()` listing incorrect devices at Chrome or Chromium or dealing with `devideId` and calling `navigator.mediaDevices.getUserMedia()` multiple times with multiple `deviceId`s or `groupId`s at all
+thereafter we can select and set any `source` and `source-output` that we decide to, at either Chromium or Firefox without bothering with `navigator.mediaDevices.enumerateDevices()` listing incorrect devices at Chrome or Chromium or calling `navigator.mediaDevices.getUserMedia()` multiple times with multiple `deviceId`s or `groupId`s at all just to change the device and resulting track
   
  ```
   setUserMediaAudioSource(
