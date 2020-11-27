@@ -92,7 +92,7 @@ from aioquic.tls import SessionTicket
 
 BIND_ADDRESS = '::1'
 BIND_PORT = 4433
-ALLOWED_ORIGINS = {'localhost', 'googlechrome.github.io'} # not implemented herein
+ALLOWED_ORIGINS = {'localhost', 'googlechrome.github.io'} # not implemented herein, only restriction are sites' CSP 
 
 # QUIC uses two lowest bits of the stream ID to indicate whether the stream is:
 #   (a) unidirectional or bidirectional,
@@ -135,7 +135,7 @@ class CounterHandler:
               else:
                 arr = input_data.split(b',')
                 print('event.data', arr[0], arr[1], event.end_stream)
-                data = subprocess.run(['./toggle_source.sh', arr[0], arr[1]], capture_output=True)
+                data = subprocess.run(['./setUserMediaAudioSource.sh', arr[0], arr[1]], capture_output=True)
                 self.payload = data.stdout
                 print(data.stdout)
 
