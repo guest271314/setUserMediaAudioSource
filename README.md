@@ -114,6 +114,6 @@ thereafter we can select and set any `source` and `source-output` that we decide
 again bypassing the specifications' and implementations omissions, lack of interoperabilty, internally-imposed restrictions, etc.
 
 I have learned all that I know about Python in the several weeks that I have been experimenting with `QuicTransport` which is now obsolete ([Is QuicTransport obsolete?
-](https://groups.google.com/a/chromium.org/g/web-transport-dev/c/PpQokbD6SbA/m/NImdr-9jBwAJ?pli=1)) and `WebTransport` ([webtransport](https://github.com/guest271314/samples-1/tree/gh-pages/webtransport)).
+](https://groups.google.com/a/chromium.org/g/web-transport-dev/c/PpQokbD6SbA/m/NImdr-9jBwAJ?pli=1)) and `WebTransport` ([webtransport](https://github.com/GoogleChrome/samples/tree/gh-pages/webtransport)).
 
 Contributions, improvements, feedback, welcome. 
