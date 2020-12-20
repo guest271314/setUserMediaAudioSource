@@ -26,10 +26,6 @@ Dynamically setting means that the same initial `MediaStreamTrack` source will b
 $ python3 quic_transport_set_user_media_audio_source_server.py certificate.pem certificate.key
 ```
 
-```
-$ python3 -m http.server 8000
-```
-
 
 ```
 var track, sources = [], source_outputs = [];
